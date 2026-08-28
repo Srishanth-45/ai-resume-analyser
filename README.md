@@ -1,87 +1,72 @@
 # 📄 AI Resume Analyser
 
-An AI-powered resume analysis application built with Python and Streamlit. It analyzes PDF resumes, evaluates resume quality and ATS compatibility, identifies skills, strengths, weaknesses, missing skills, and recommends suitable career roles.
-
-It also provides targeted job-description matching using Google's Gemini API.
+An AI-powered Resume Analyser built with Python and Streamlit that helps students and job seekers understand the strengths, weaknesses, ATS compatibility, missing skills, and job suitability of their resumes.
 
 ## 🚀 Live Demo
 
-[Open the AI Resume Analyser](YOUR_STREAMLIT_APP_URL)
+👉 [Open the AI Resume Analyser](https://ai-resume-analyser-csssn.streamlit.app/)
 
-## 📌 Project Overview
-
-AI Resume Analyser helps students and job seekers understand how well their resume represents their skills and experience.
-
-Users can upload a PDF resume and receive AI-generated feedback including:
-
-- Resume Quality Score
-- ATS Compatibility Score
-- Professional Summary
-- Detected Skills
-- Strengths
-- Weaknesses
-- Missing Skills
-- Best-Suited Roles
-- Resume Improvement Suggestions
-
-Users can also provide a job description to receive a targeted compatibility analysis.
+---
 
 ## ✨ Features
 
-### 📄 Resume Analysis
-- Upload a resume in PDF format
-- Extract resume content automatically
-- Generate an AI-powered professional summary
-- Evaluate overall resume quality
-- Estimate ATS compatibility
+- 📄 Upload resumes in PDF format
+- 🤖 AI-powered resume analysis
+- 📊 Resume Quality Score
+- 🎯 ATS Compatibility Score
+- 🧠 AI-generated Professional Summary
+- 🛠️ Skills Detection
+- 💪 Resume Strengths
+- ⚠️ Resume Weaknesses
+- 📚 Missing Skills Identification
+- 💼 Best-Suited Job Roles
+- 💡 Personalized Resume Improvement Suggestions
+- 📝 Job Description Matching
+- 🔍 Identify skills missing for a specific job
+- 🔑 Detect important keywords missing from the resume
+- 📈 Job Match Score
 
-### 🛠️ Skills Analysis
-- Detect technical and professional skills
-- Identify strengths
-- Identify weaknesses
-- Suggest missing skills
-- Highlight areas for career development
+---
 
-### 💼 Career Recommendations
-- Recommend suitable entry-level roles
-- Match resume skills with potential career paths
-- Provide actionable resume improvement suggestions
+## 🖥️ How It Works
 
-### 🎯 Job Description Matching
-When a job description is provided, the application performs targeted analysis:
+1. Upload your resume as a PDF.
+2. Optionally enter a job description.
+3. Click **Analyze Resume**.
+4. The application extracts and analyses the resume content.
+5. AI generates:
+   - Resume quality score
+   - ATS compatibility estimate
+   - Detected skills
+   - Strengths and weaknesses
+   - Missing skills
+   - Suitable job roles
+   - Improvement suggestions
+6. If a job description is provided, the application also performs a targeted job match analysis.
 
-- Job Match Score
-- Skills the candidate already has
-- Skills missing from the resume
-- Important missing keywords
-- Job-specific improvement suggestions
+---
 
-If no job description is provided, the job-specific analysis is automatically skipped.
-
-### 🤖 AI-Powered Analysis
-The application uses Google's Gemini API to generate contextual resume feedback rather than relying only on fixed rules.
-
-## 🛠️ Technologies Used
+## 🧰 Technologies Used
 
 - **Python**
 - **Streamlit**
 - **Google Gemini API**
-- **PyPDF2**
-- **Pandas**
-- **python-dotenv / Streamlit Secrets**
+- **PDF Processing**
+- **AI / Natural Language Processing**
+- **Data Analysis**
+
+---
 
 ## 📂 Project Structure
 
 ```text
 ai-resume-analyser/
 │
-├── .streamlit/
-│   ├── config.toml
-│   └── secrets.toml.example
-│
-├── ai_analyzer.py
 ├── app.py
+├── ai_analyzer.py
 ├── resume_parser.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── .streamlit/
+    └── secrets.toml
