@@ -4,7 +4,7 @@ An AI-powered Resume Analyser built with Python and Streamlit that helps student
 
 ## 🚀 Live Demo
 
-👉 [Open the AI Resume Analyser](https://ai-resume-analyser-csssn.streamlit.app/)
+👉 [Open the AI Resume Analyser](https://ai-resume-analyser-sssn.streamlit.app/)
 
 ---
 
